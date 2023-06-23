@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Send/Receive money </title>
+    <link rel="stylesheet" href="sendreceivemoney.css">
+</head>
+
+<body>
+    <div class="top">
+        <h1 id="welcome"> Welcome... </h1>
+    </div>
+    <div class="form" >
+        <form action="sendreceivemoney.html" method="post" id="form">
+            <label for="bank"> Bank : </label>
+            <input type="text" id="bank" name="bank" placeholder="receiver's bank name"> <br>
+            <label for="account"> Account number: </label>
+            <input type="number" id="account" name="account" placeholder="receiver's account number"> <br>
+            <label for="amount"> Amount: </label>
+            <input type="number" id="amount" name="amount" placeholder="amount"> <br>
+            <small> fees:#10.00 </small> <br>
+            <label for="narration"> Narration </label>
+            <input type="text" name="narration" id="narration" , placeholder="narration"> <br>
+            <div class="bottom">
+                <input type="submit" onclick="return validateForm()" value="Send Money" id="submit">
+                <a href="index.html">Go back</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="sendreceivemoney.js"></script>
+
+</html>

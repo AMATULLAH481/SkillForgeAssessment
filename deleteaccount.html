@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+</head><link rel="stylesheet" href="deleteaccount.css">
+<body>
+    <div class="top">
+        <h1 id="welcome"> Welcome... </h1>
+    </div>
+    <div class="form">
+        <form action="deleteaccount.html" method="post" id="form">
+            <label for="Name"> Name: </label>
+            <input type="text" name="name" id="name" placeholder="Name"> <br>
+            <label for="Phonenumber"> Phone-number: </label>
+            <input type="number" name="Phonenumber" id="Phonenumber" placeholder="Phonenumber"> <br>
+            <label for="Password"> Password: </label>
+            <input type="password" name="Password" id="Password" placeholder="Password"> <br>
+            <label for="Occupation"> Occupation: </label>
+            <input type="text" name="Occupation" id="Occupation" placeholder="Occupation"> <br>
+            <label for="BVN"> BVN: </label>
+            <input type="password" name="BVN" id="BVN" placeholder="BVN"> <br>
+            <div class="bottom">
+                <input type="submit" onclick="return validateForm()" value="Confirm Deletion" id="submit">
+                <a href="index.html">Go back</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="deleteaccount.js"></script>
+</html>
